@@ -1,0 +1,452 @@
+/*=============== Fonts ====================================================================================================================================================================*/
+
+@font-face {
+    font-family: "Libre-franklin";
+    font-display: swap;
+    src: url("../fonts/libre-franklin400.woff") format("woff"), url("../fonts/libre-franklin400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Libre-franklin";
+    font-display: swap;
+    src: url("../fonts/libre-franklin700.woff") format("woff"), url("../fonts/libre-franklin700.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tenor-sans";
+    font-display: swap;
+    src: url("../fonts/tenor-sans400.woff") format("woff"), url("../fonts/tenor-sans400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source-serif-pro";
+    font-display: swap;
+    src: url("../fonts/source-serif-pro400.woff") format("woff"),
+        url("../fonts/source-serif-pro400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*=============== /Fonts ====================================================================================================================================================================*/
+
+/*=============== Nullstyle ====================================================================================================================================================================*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+    border: 0;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+button,
+input[type="submit"] {
+    display: inline-block;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+}
+
+/*=============== /Nullstyle ====================================================================================================================================================================*/
+
+/*=============== Options ====================================================================================================================================================================*/
+
+body {
+    font-family: "Libre-franklin";
+    height: 100%;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+}
+
+.page-wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.page-content {
+    flex: 1 1 auto;
+    margin-top: 150px;
+    margin-bottom: 70px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.ibg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ibg img {
+    display: none;
+}
+
+/*=============== /Options ====================================================================================================================================================================*/
+
+/*=============== Common Styles ====================================================================================================================================================================*/
+
+.small-title {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666666;
+    font-weight: 400;
+}
+
+.post-none * {
+    text-align: center;
+}
+
+.page-content a {
+    transition: transform 0.2s ease 0s, color 0.2s ease 0s;
+    padding: 5px 0;
+}
+
+.page-content a > * {
+    transition: transform 0.2s ease 0s, color 0.2s ease 0s;
+}
+
+.page-content a:not(.post-image):hover {
+    transform: translateY(-2px);
+    color: red !important;
+}
+
+.page-content a:hover > * {
+    color: red !important;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-category {
+    color: #999;
+    padding: 5px 0;
+    margin: -5px 0 10px 0;
+}
+
+.post-title {
+    font-family: "Tenor-sans";
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.post-text {
+    font-family: "Source-serif-pro";
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.post-author {
+    font-weight: 700;
+    color: #000;
+    margin: -5px 0;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.post-author a {
+    color: inherit;
+}
+
+ul li:not(.menu-item) {
+    margin-left: 20px;
+}
+
+.search-query {
+    font-size: 18px;
+    text-transform: none;
+}
+
+.search .post:not(:last-child),
+.archive .post:not(:last-child) {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination {
+    text-align: center;
+    margin: 0 -5px;
+    margin-top: 20px;
+}
+
+.pagination .page-numbers {
+    font-size: 20px;
+    padding: 5px;
+    color: #000;
+    transition: transform 0.2s ease 0s, color 0.2s ease 0s;
+}
+
+.pagination .page-numbers.current {
+    font-family: "Tenor-sans";
+    color: red;
+}
+
+.pagination .page-numbers:hover {
+    transform: translateY(-2px);
+    color: red !important;
+}
+
+/* Comments */
+.comments-area {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.comments-area a {
+    color: #000;
+}
+
+.comments-title,
+.comment-reply-title {
+    font-family: "Tenor-sans";
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.comment-reply-title small {
+    margin-left: 5px;
+}
+
+.comment-respond {
+    padding: 0;
+}
+
+.comment-list li {
+    list-style-type: none;
+}
+
+.comment-list .comment-body {
+    border: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.comment-list .children {
+}
+
+.comment-form p {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form p {
+    margin-bottom: 10px;
+}
+
+.comment-form .comment-form-cookies-consent,
+.comment-form .logged-in-as {
+    display: block;
+}
+
+.comment-form .comment-notes,
+.required-field-message {
+    display: none;
+}
+
+.comment-form textarea,
+.comment-form input:not([type="submit"], [type="checkbox"]) {
+    background-color: #fff;
+    padding: 14px 18px;
+    border: 2px solid #000;
+    width: 100%;
+}
+
+.comment-form textarea {
+    resize: none;
+    width: 100%;
+    height: 120px;
+}
+
+.comment-form input:not([type="submit"], [type="checkbox"]) {
+    width: 300px;
+}
+
+.comment-form label {
+    font-family: "Tenor-sans";
+    font-weight: 700;
+}
+
+#wp-comment-cookies-consent {
+    margin-right: 5px;
+}
+
+.comment-form input[type="submit"] {
+    display: block;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    border: 2px solid #000;
+    background-color: transparent;
+    padding: 15px 28px;
+    margin: 0 auto;
+    transition: all 0.2s ease 0s;
+    font-weight: 700;
+}
+
+.comment-form input[type="submit"]:hover {
+    transform: scale(1.03);
+    color: red;
+    border-color: red;
+}
+
+/* 404 */
+.not-found > * {
+    text-align: center;
+}
+
+/*=============== /Common Styles ====================================================================================================================================================================*/
+
+/*=============== Pointer ====================================================================================================================================================================*/
+
+@media (max-width: 991.98px) {
+    .page-content {
+        margin-top: 120px;
+        margin-bottom: 60px;
+    }
+
+    .page-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .page-content {
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+
+    .small-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .comments-area {
+        padding: 10px;
+    }
+
+    .comment-form input:not([type="submit"], [type="checkbox"]) {
+        width: 100%;
+    }
+}
+
+@media (pointer: fine) {
+    a,
+    button,
+    input[type="submit"],
+    ._isButton {
+        cursor: pointer;
+    }
+}
+
+@media (pointer: coarse) {
+    a,
+    button,
+    input[type="submit"],
+    ._isButton {
+        cursor: default;
+        -webkit-tap-highlight-color: transparent;
+    }
+}

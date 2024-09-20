@@ -1,0 +1,66 @@
+.noiceland_photo-gallery {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+}
+
+.photo-gallery-class {
+    cursor: zoom-in;
+}
+
+.noiceland_photo-gallery._active {
+    transition-delay: 0s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.photo-gallery__wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.photo-gallery__image {
+    width: 900px;
+    height: 550px;
+}
+
+@media (max-width: 1199.98px) {
+    .photo-gallery__image {
+        width: 850px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .photo-gallery__image {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .photo-gallery__image {
+        height: 370px;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .photo-gallery__image {
+        height: 280px;
+    }
+}
+
+@media (max-width: 359.98px) {
+    .photo-gallery__image {
+        height: 220px;
+    }
+}

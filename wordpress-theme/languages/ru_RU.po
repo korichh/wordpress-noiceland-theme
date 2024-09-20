@@ -1,0 +1,197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Noiceland\n"
+"POT-Creation-Date: 2022-06-15 16:31+0300\n"
+"PO-Revision-Date: 2022-06-15 16:39+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:8
+msgid "Page not found"
+msgstr "Страница не найдена"
+
+#: 404.php:11
+msgid "The page you are looking for doesn't exist or has been moved."
+msgstr "Страница, которую вы ищете, не существует или была перемещена."
+
+#: archive.php:26 inc/template-tags.php:137 index.php:23 search.php:27
+msgid "Prev"
+msgstr "Назад"
+
+#: archive.php:27 inc/template-tags.php:138 index.php:24 search.php:28
+msgid "Next"
+msgstr "Далее"
+
+#: comments.php:16
+msgid "One comment on post"
+msgstr "Один комментарий к посту"
+
+#: comments.php:19
+#, php-format
+msgctxt "comments title"
+msgid "%1$s comment on post"
+msgid_plural "%1$s comments on post"
+msgstr[0] "%1$s комментарий к записи"
+msgstr[1] "%1$s комментария к записи"
+msgstr[2] "%1$s комментариев к записи"
+
+#: comments.php:40
+msgid "Comments are closed."
+msgstr "Комментарии отключены."
+
+#: footer.php:27
+msgid "Categories"
+msgstr "Рубрики"
+
+#: footer.php:44
+msgid "Information"
+msgstr "Информация"
+
+#: footer.php:58
+msgid "Follow us"
+msgstr "Подписаться"
+
+#: footer.php:72
+msgid "Template"
+msgstr "Шаблон"
+
+#: front-page.php:38
+msgid "Latest posts"
+msgstr "Недавние записи"
+
+#: front-page.php:48
+msgid "View all latest posts"
+msgstr "Все последние записи"
+
+#: front-page.php:72
+msgid "Featured posts"
+msgstr "Популярные сообщения"
+
+#: functions.php:92
+msgid "Header navigation"
+msgstr "Меню в шапке"
+
+#: functions.php:93
+msgid "Categories navigation"
+msgstr "Меню категорий"
+
+#: functions.php:94
+msgid "Information navigation"
+msgstr "Меню информаций"
+
+#: functions.php:95
+msgid "Follow us navigation"
+msgstr "Меню подписок"
+
+#: functions.php:96
+msgid "Template navigation"
+msgstr "Меню шаблона"
+
+#: functions.php:146
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+#: functions.php:148
+msgid "Add widgets here."
+msgstr "Добавьте виджеты здесь."
+
+#: inc/customizer.php:34 inc/customizer.php:36
+msgid "Theme options"
+msgstr "Опции темы"
+
+#: inc/customizer.php:48
+msgid "Add photo-gallery (in single page)"
+msgstr "Добавить фотогалерею (на странице записи)"
+
+#: inc/customizer.php:61
+msgid "Add animation"
+msgstr "Добавить анимацию"
+
+#: inc/customizer.php:74
+msgid "Add preloader"
+msgstr "Добавить прелоадер"
+
+#: inc/customizer.php:91
+msgid "Footer logo"
+msgstr "Логотип в подвале"
+
+#: inc/customizer.php:102
+msgid "All rights resolved"
+msgstr "Все права защищены"
+
+#: inc/customizer.php:109
+msgid "Footer copyright"
+msgstr "Копирайт в подвале"
+
+#: inc/template-tags.php:19
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Опубликовано %s"
+
+#: inc/template-tags.php:40
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:42
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Опубликовано в %1$s"
+
+#: inc/template-tags.php:45
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:47
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Помечено %1$s"
+
+#: inc/template-tags.php:56
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Оставить комментарий<span class=\"screen-reader-text\"> к %s</span>"
+
+#: inc/template-tags.php:72
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Редактировать <span class=\"screen-reader-text\">%s</span>"
+
+#: search.php:11
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результаты Поиска для: %s"
+
+#: searchform.php:3
+msgid "Type to search"
+msgstr "Введите для поиска"
+
+#: template-parts/content-none.php:4
+msgid "Sorry, but nothing matched your search terms."
+msgstr "Извините, но ничто не соответствовало вашему поисковому запросу."
+
+#: template-parts/content-none.php:7
+msgid "Please try again with some different keywords."
+msgstr "Повторите попытку с помощью других ключевых слов."
+
+#: template-parts/content-none.php:11
+#, php-format
+msgid "No posts in category: %s"
+msgstr "Нет записей в рубрике: %s"
+
+#: template-parts/content-none.php:15
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
